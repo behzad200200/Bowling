@@ -4,7 +4,7 @@
     <list default="true" id="7ad57c2a-b0f6-49a7-b6bf-364f7f5921cc" name="Default" comment="" />
     <ignored path="Bowling.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/bowling.rb" changelist="7ad57c2a-b0f6-49a7-b6bf-364f7f5921cc" time="1395881022812" ignored="false" />
+    <file path="/bowling.rb" changelist="7ad57c2a-b0f6-49a7-b6bf-364f7f5921cc" time="1395885797611" ignored="false" />
     <file path="/Frame.rb" changelist="7ad57c2a-b0f6-49a7-b6bf-364f7f5921cc" time="1395844661521" ignored="false" />
     <file path="/temp.rb" changelist="7ad57c2a-b0f6-49a7-b6bf-364f7f5921cc" time="1395846960857" ignored="false" />
     <file path="/bowling_spec.rb" changelist="7ad57c2a-b0f6-49a7-b6bf-364f7f5921cc" time="1395880766063" ignored="false" />
@@ -31,7 +31,7 @@
       <file leaf-file-name="bowling.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/bowling.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="34" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.6069364">
+            <state line="76" column="6" selection-start="1649" selection-end="1649" vertical-scroll-proportion="1.7369943">
               <folding />
             </state>
           </provider>
@@ -413,7 +413,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/bowling.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="34" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.6069364">
+        <state line="76" column="6" selection-start="1649" selection-end="1649" vertical-scroll-proportion="1.7369943">
           <folding />
         </state>
       </provider>

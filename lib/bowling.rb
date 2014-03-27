@@ -21,7 +21,7 @@ class Bowling
         next
       end
       frame = frames.find {|f| !f.finish?}
-      if index > 9
+      if frame.nil?
           break
       end
       if pin == 10
@@ -60,7 +60,7 @@ class Bowling
   sum = 0
   frames.each do |frame|
     if !frame.score.nil?
-        sum +=frame.score
+        sum += frame.score
      end
     end
    sum
@@ -72,5 +72,5 @@ class Bowling
 end
 
 
-test = Bowling.new("10 10 10 2 , 0 10 10 10 10 1")
+test = Bowling.new("10 10 10 10 10 10 10 10 10 10 10 10")
 puts test.count()
