@@ -11,7 +11,7 @@ class Bowling
 
   # moves through pins
   def moves()
-    get_pins()
+    set_pins()
     roll_overload?()
     @pins.each_with_index do |pin , index|
        if skip_pin?
@@ -52,7 +52,7 @@ class Bowling
    # This method calculate sum of frames
 
     def strike?(pin)
-        pin == 10
+      pin == 10
     end
 
     def spare?(index , pin)
@@ -91,6 +91,7 @@ class Bowling
       end
     end
 
+    #Use to fill normal frame
     def add_normal_frame(index, frame)
       pin = @pins[index]
       if @pins[index.succ].nil?
@@ -100,11 +101,12 @@ class Bowling
         frame.score = pin + @pins[index.succ]
         @skip_flag  = true
       end
-    end
+     end
 
-   def input_valid?(index)
+  def input_valid?(index)
      !@pins[index.succ].nil? and  @pins[index] + @pins[index.succ] > 10
    end
+  #use to skip second roll in spare and normal frame
   def skip_pin?
     skip = false
     if @skip_flag == true
@@ -114,11 +116,12 @@ class Bowling
     skip
   end
   # Split string to array of integers
-  def get_pins()
+  def set_pins()
     @pins = @input_string.strip.split(/\s+/).collect { |i| i.to_i }
   end
 
-    def get_sum_frame()
+  # Calculates total amount of frames
+  def get_sum_frame()
     sum = 0
     @frames.each do |frame|
       if !frame.score.nil?
@@ -126,6 +129,13 @@ class Bowling
       end
     end
     sum
+  end
+  def get_pins()
+    @pins
+  end
+
+  def get_frames()
+    @frames
   end
 end
 
