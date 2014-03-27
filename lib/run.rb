@@ -1,5 +1,6 @@
 require_relative 'bowling'
 require_relative 'frame'
-# Bowling constructor get parameter from terminal
-test = Bowling.new("2 9 8 1 3")
+# Bowling constructor get parameter from terminal in this format "3 3 3 3 3 1"
+
+test = Bowling.new(ARGV[0])
 puts test.count()
